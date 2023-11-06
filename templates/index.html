@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .content {
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            width: 100px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="content" style="text-align: center;">
+        <h1 style="text-align: center;">Weather App</h1>
+        <div class="form">
+            <form action="weather" method="POST">
+                
+                <input type="text" placeholder="Enter city name" name="city" id="city"> <br><br>
+                <input type="text" name="unit" id="unitkey" placeholder="Enter units"> <br><br>
+                
+                <input type="submit" value="Search">
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
